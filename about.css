@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+   
+
+    
+    }
+    .header{
+        top: 0;
+        position: fixed;
+        z-index: 1;
+       display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      width: 100%;
+      padding: 1rem;
+      box-shadow: 1px 0px 24px 13px rgba(11, 15, 36, 0.422);
+      background-color: rgb(14, 20, 54);
+    }
+   
+    main{
+        background-color: rgba(1, 8, 12, .9);
+    }
+
+     .logo{
+        
+        font-style: oblique;
+        padding: 20px;
+        text-decoration: none;
+        font-size: 1.5rem;
+        margin-left: 3rem;
+        color: white;
+     } 
+     
+   .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        column-gap: 20px;
+         margin-right: 3rem;
+            
+    }
+   
+   
+    .navbar a{
+        text-decoration: none;
+        font-size: 1.5rem;
+        margin-left: 3rem;
+        color: white; 
+        
+    }
+    .logo:hover{
+        font-size: 2.4rem;
+        color: gold;
+        text-shadow: 3px 3px 12px 8px gold;
+       
+     
+    }
+    .navbar a:hover,
+    .navbar .active
+{
+        color: gold;
+       font-size: 1.7rem;
+       transition: filter 0.5 ease-in-out;
+       font-style: oblique;
+      
+    }
+    #menu-icon{
+        font-size: 3rem;
+        display: none;
+
+    }
+ 
+    .section1{
+        display: flex;
+        column-gap:3rem;
+        align-items: center;
+        margin:0 0 1rem 13rem; 
+       
+    }  
+    .myimage{
+        width: 200px;
+        height: 200px;
+        margin: 12rem 0  1rem 4rem;
+        border: 8px solid rgba(1, 8, 12, 1);
+        border-radius: 120px;
+        box-shadow:0 0 100px 30px rgba(1, 8, 12, 3);
+    }
+    
+.myimage:hover{
+    box-shadow:0 0 5px white,
+  
+}
+
+.description{
+    margin-top: 12rem;
+    font-weight: 700;
+    padding: 4px;
+    font-size: 1.4rem;
+}
+.description h1{
+    color: gold;
+}
+address{
+    padding: 1.3rem;
+}
+
+ 
+
+.description h3,
+.description h4{
+    font-weight: 700;
+    padding: 4px;
+    color: blue;
+    font-size: 1.6rem;
+}
+
+.documentation{
+    margin:2rem 7rem 2rem 7rem;
+}
+
+article{
+    padding: 1.4rem;
+    width: 100%;
+    text-indent: 1.2rem;
+    
+}
+
+article h2{
+    padding: 1rem;
+    margin-left:2.2rem;
+    font-weight: 700;
+    font-variant: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    
+}
+article p{
+    font-size: 20px;
+    font-weight: 200;
+    font-style: normal;
+    word-wrap: break-word;
+    word-spacing: 2px;
+}
+.certificate{
+    margin: 2rem 0  0 4rem;
+    
+  
+    }
+    .certificate img{
+        width: 260px;
+        height: 200px;
+        padding: 10px;
+        margin: 3rem 0 0 3rem;
+        box-shadow: 0 0 4px 3px rgba(1, 1, 3, 0.836);
+    }
+  p a{
+    color: rgb(38, 16, 235);
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  p a:hover{
+    background-color: rgb(11, 11, 209);
+    color: white;
+    font-style: oblique;
+    box-shadow: 0 0 3px 2px rgb(12, 116, 201);
+  }
+    .online-contact{
+        margin: 2rem 0 1rem 2rem;
+     }
+     .online-contact span i{
+        color:cyan;
+        font-size: 24px;
+        font-weight: 700;
+        margin-top:12px;
+         
+     }
+     .online-contact a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        margin: -5px 0 0 3px;
+    
+     }
+     .online-contact a:hover{
+        text-shadow:0 0 5px cyan,
+        0 0 25px cyan,
+        0 0 50px cyan,
+        0 0 100px cyan,
+        0 0 200px cyan;
+        font-style:oblique;
+        color: rgb(41, 185, 12);
+    
+     }
+  
+     @media (max-width: 768px) {
+        .header {
+          padding: 0.8rem;
+        }
+        body{
+            width: fit-content;
+            }
+            #menu-icon{
+                display: block;
+            }
+            .navbar{
+                position: absolute;
+                top:100%;
+                left: 0;
+                background-color: rgba(5, 9, 31,0.34);
+                width:100%;
+                display: none;
+                padding-left: 3rem;
+                border-bottom: 2px solid rgba(5, 9, 31,2) ;
+            }
+            .navbar a{
+                margin-top: 1.1rem;
+                display: block;
+
+            }
+            .navbar.active
+            {
+                display: flex;
+                flex-direction: column;
+                row-gap: 13px;
+            }
+        
+      
+        .myimage {
+          width: 160px;
+          height: 160px;
+          margin: 5rem 0 1rem 2rem;
+        }
+
+      
+        .certificate img {
+          width: 200px;
+          height: 160px;
+          margin: 2rem 0 0 2rem;
+        }
+      
+
+      }
+      @media (max-width: 480px){
+
+        .section1{
+            display: flex;
+            flex-direction: column;
+            row-gap:-20rem;
+            align-items: center;
+            margin:2rem 0 1rem 4rem; 
+           
+        } 
+        .description{
+            width: fit-content;
+            margin: 0rem 3rem 2rem 3rem;
+        }
+
+        .myimage{
+            width: 200px;
+            height: 200px;
+            margin: 10rem 0  1rem 3rem;
+    
+
+     }
+     .documentation{
+    width: fit-content;
+    font-size: 1.6rem;
+     }
+     .certificate{
+        margin-left: 2rem;
+     }
+    
+
+
+      }
